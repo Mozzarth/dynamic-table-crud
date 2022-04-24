@@ -1,0 +1,24 @@
+<div class="configuracion-container">
+    <div class="configuracion">
+        <h1 class="configuracion__title">Configuración</h1>
+    
+        <div class="selector-table">
+            <span class="selector-table__label">Tabla:</span>
+            <kendo-dropdownlist [data]="table" textField="name" valueField="id" [value]="table[0]">
+            </kendo-dropdownlist>
+        </div>
+    </div>
+    
+    <div class="data">
+        
+        <div class="data-header">
+            <h1 class="data-header__title">Datos</h1>
+            <span class="data-header__icon--add">More</span>
+        </div>
+
+        <div class="container-table">
+            <configuracion-table [TableDetail]="currentTable" ></configuracion-table>
+        </div>
+    
+    </div>
+</div>
